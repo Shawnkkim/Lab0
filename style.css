@@ -1,4 +1,44 @@
+
 h1{
+    font-family: Arial,  sans-serif;
     color: rgb(65, 65, 85); 
     text-align: center;
 }
+
+h2{
+  font-family: Arial,  sans-serif;
+  font-size: 28px;
+  color: royalblue;
+ 
+}
+
+table{
+    border: 2px solid black;
+}
+/* Using @media query, Css styling that apply when the browser window is 600px or smaller, the background color will be lightblue: */
+
+  body {
+    background-color: lightgreen;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+/*Css Selectors using Pseudoelement Selector
+*/
+p::selection
+{
+    color:black;
+    background-color: yellowgreen;
+}
+
+/*Css Class Selector
+*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
