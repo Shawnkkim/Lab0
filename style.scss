@@ -1,0 +1,38 @@
+
+$myFont: arial, sans-serif;
+$myColor: black;
+$myFontSize: 30px;
+$myWidth: 430px;
+
+/*using Scss inheritance @extend*/
+.error:hover {
+    background-color: #fee;
+  }
+  
+  .error--serious {
+    @extend .error;
+    border-width: 3px;
+  }
+/*using Scss nesting */
+  nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+  }
+
+  #container {
+    font-family: $myFont;
+    font-size: $myFontSize;
+    color: $myColor;
+    width: $myWidth;
+  }
