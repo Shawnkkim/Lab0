@@ -12,9 +12,35 @@ h2{
  
 }
 
-table{
+table {
     border: 2px solid black;
-}
+    border-collapse: collapse;
+    width: 50%;
+    }
+    th, td
+    {
+        border: 1px solid black;
+        padding: 5px; 
+    }
+    td{
+        background-color: lightsteelblue
+    }
+    th{
+        background-color: lightgray;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      
+      /* Clear floats after image containers */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
 /* Using @media query, Css styling that apply when the browser window is 600px or smaller, the background color will be lightblue: */
 
   body {
@@ -41,4 +67,17 @@ p::selection
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+  }
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
